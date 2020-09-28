@@ -1,0 +1,6 @@
+[
+    {
+        "keys": ["ctrl+alt+a"], 
+        "command": "split_reverse" 
+    }
+]
