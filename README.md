@@ -5,14 +5,17 @@
 由于特殊情况，不能要求对方们使用填写表单的方式收集。    
 需整理的数量有点多，而且他们发来的格式乱七八糟，要整理成方便寄件的文字格式，怎么办？  
   
-理想中的文本格式：
+理想中的文本格式：  
+
 ```
 姓名   手机        地址
 ------------------------------------------------------
 周树人 15200000000 北京市西城区阜成门内宫门口二条19号
 ```
 
-实际发来的：
+<br>  
+
+实际发来的：  
 
 ```
 地址：北京市西城区阜成门内宫门口二条19号
@@ -40,13 +43,14 @@
 详细地址: 阜成门内宫门口二条19号
 ```
 
-反正各种各样都有。。或者包含其他的分隔符号啊，不写空格啊，写了1个不写另一个啊。。看着就头疼。  
+反正各种各样都有，要不就包含其他的分隔符号，或者不加空格啊，加了1一边另一个不加啊。。看着就头疼。  
 从QQ邮箱复制的时候，还可能顺便复制到地址或手机号的浮动提示文字。  
 
 
 因为平时都在用SublimeText 作为文本编辑器。  
-所以，把它做成 Sublime Text 3 的插件，会更加方便 (感谢 @hyrious 技术支持！)
+所以把它做成 Sublime Text 3 的插件，会更加方便 (感谢 @hyrious 技术支持！)
 
+<br>
 
 ## 如何安装
 
@@ -61,7 +65,7 @@
     └─Context.sublime-menu
 ```
 
-
+<br>
 
 ### SplitReverse.py
 
@@ -104,6 +108,7 @@ class SplitReverseCommand(sublime_plugin.TextCommand):
         self.view.replace(edit, sel, str_text)
 ```
 
+<br>
 
 ### Context.sublime-menu
 让插件显示在右键菜单中
@@ -118,7 +123,7 @@ class SplitReverseCommand(sublime_plugin.TextCommand):
 ]
 ```
 
-
+<br>
 
 ### Default (Windows).sublime-keymap
 让插件支持快捷键。这里Windows / Linux 的快捷键是一样的
@@ -132,8 +137,11 @@ class SplitReverseCommand(sublime_plugin.TextCommand):
 ]
 ```
 
+<br>
+
 ### Default (OSX).sublime-keymap
 Mac 的快捷键
+
 ```json
 [
     {
@@ -143,10 +151,11 @@ Mac 的快捷键
 ]
 ```
 
+<br><br>
+
 ## 如何使用
 
 我习惯将一段文本粘贴进去，按 Ctrl + A全选，然后 Ctrl + Alt + A 执行。
-
 
 ---
 
@@ -155,3 +164,4 @@ Mac 的快捷键
 @hyrious 提供的技术支持！
 
 
+<br><br><br>
