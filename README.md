@@ -58,7 +58,7 @@
 
 ## 如何安装
 
-在 [Packages] 新建一个 [SplitReverse] 文件夹，里面放放入这里的6个文件。
+在 [Packages] 新建一个 [SplitReverse] 文件夹，里面放入这里的6个文件。
 
 > **如何找到[Packages]**： Sublime Text 上方的菜单：[Preferences - Browse Packages...]
 
