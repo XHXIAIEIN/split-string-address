@@ -60,6 +60,8 @@
 
 在 [Packages] 新建一个 [SplitReverse] 文件夹，里面放放入这里的6个文件。
 
+> **如何找到[Packages]**： Sublime Text 上方的菜单：[Preferences - Browse Packages...]
+
 ```
 └─SplitReverse
     ├─SplitReverse.py
@@ -69,11 +71,6 @@
     ├─Default (OSX).sublime-keymap
     └─Context.sublime-menu
 ```
-
-<br>
-
-> **如何找到[Packages]文件夹**：
-> Sublime Text 上方的菜单：[Preferences - Browse Packages...]
 
 <br>
 
