@@ -48,7 +48,7 @@
 所以，把它做成 Sublime Text 3 的插件，会更加方便 (感谢 @hyrious 技术支持！)
 
 
-# 如何安装
+## 如何安装
 
 在 [Packages] 新建一个 [SplitReverse] 文件夹，里面放放入这里的6个文件。
 ```
@@ -63,7 +63,7 @@
 
 
 
-## SplitReverse.py
+### SplitReverse.py
 
 ```python
 import sublime
@@ -105,7 +105,7 @@ class SplitReverseCommand(sublime_plugin.TextCommand):
 ```
 
 
-## Context.sublime-menu
+### Context.sublime-menu
 让插件显示在右键菜单中
 
 ```json
@@ -120,7 +120,7 @@ class SplitReverseCommand(sublime_plugin.TextCommand):
 
 
 
-## Default (Windows).sublime-keymap
+### Default (Windows).sublime-keymap
 让插件支持快捷键。这里Windows / Linux 的快捷键是一样的
 
 ```json
@@ -132,7 +132,7 @@ class SplitReverseCommand(sublime_plugin.TextCommand):
 ]
 ```
 
-## Default (OSX).sublime-keymap
+### Default (OSX).sublime-keymap
 Mac 的快捷键
 ```json
 [
@@ -143,14 +143,14 @@ Mac 的快捷键
 ]
 ```
 
-# 如何使用
+## 如何使用
 
 我习惯将一段文本粘贴进去，按 Ctrl + A全选，然后 Ctrl + Alt + A 执行。
 
 
 ---
 
-# 特别感谢
+## 特别感谢
 
 @hyrious 提供的技术支持！
 
