@@ -1,0 +1,6 @@
+[
+    {
+        "keys": ["command+shift+a"], 
+        "command": "split_reverse" 
+    }
+]
