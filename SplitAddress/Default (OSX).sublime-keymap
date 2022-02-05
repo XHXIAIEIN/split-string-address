@@ -1,6 +1,6 @@
 [
     {
         "keys": ["command+shift+a"], 
-        "command": "split_reverse" 
+        "command": "split_address" 
     }
 ]

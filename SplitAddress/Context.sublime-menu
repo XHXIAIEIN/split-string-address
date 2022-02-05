@@ -1,0 +1,7 @@
+[
+    {
+        "id": "split_address",
+        "command": "split_address",
+        "caption": "SplitAddress"
+    }
+]

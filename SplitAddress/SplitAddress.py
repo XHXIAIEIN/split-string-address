@@ -2,11 +2,16 @@ import sublime
 import sublime_plugin
 import re
 
-class SplitReverseCommand(sublime_plugin.TextCommand):
+class SplitAddressCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         # 选中文本
         sel = self.view.sel()[0]
-        if sel.empty(): return
+
+        # 忽略内容为空的情况
+        if sel.empty(): 
+            return
+
+        # 提取选中的文本
         text = self.view.substr(sel)
  
         # 临时变量
@@ -21,8 +26,6 @@ class SplitReverseCommand(sublime_plugin.TextCommand):
 
         # 分隔换行符
         split_line = re.sub(regex_split ,' ', text.strip().lstrip().rstrip()).split()
-
-        # print(split_line)
 
         # 提取信息
         for s in split_line: 
