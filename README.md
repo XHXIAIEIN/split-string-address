@@ -58,14 +58,14 @@
 
 ## 如何安装
 
-在 [Packages] 新建一个 [SplitReverse] 文件夹，里面放入这里的6个文件。
+在 [Packages] 新建一个 [SplitAddress] 文件夹，里面放入这里的6个文件。
 
 > **如何找到[Packages]**： Sublime Text 上方的菜单：[Preferences - Browse Packages...]
 
 ```
-└─SplitReverse
-    ├─SplitReverse.py
-    ├─SplitReverse.sublime-commands
+└─SplitAddress
+    ├─SplitAddress.py
+    ├─SplitAddress.sublime-commands
     ├─Default (Windows).sublime-keymap
     ├─Default (Linux).sublime-keymap
     ├─Default (OSX).sublime-keymap
@@ -74,14 +74,14 @@
 
 <br>
 
-### SplitReverse.py
+### SplitAddress.py
 
 ```python
 import sublime
 import sublime_plugin
 import re
 
-class SplitReverseCommand(sublime_plugin.TextCommand):
+class SplitAddressCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         # 选中文本
         sel = self.view.sel()[0]
@@ -128,9 +128,9 @@ class SplitReverseCommand(sublime_plugin.TextCommand):
 ```json
 [
     {
-        "id": "split_reverse",
-        "command": "split_reverse",
-        "caption": "SplitReverse"
+        "id": "split_address",
+        "command": "split_address",
+        "caption": "SplitAddress"
     }
 ]
 ```
@@ -144,7 +144,7 @@ class SplitReverseCommand(sublime_plugin.TextCommand):
 [
     {
         "keys": ["ctrl+alt+a"], 
-        "command": "split_reverse" 
+        "command": "split_address" 
     }
 ]
 ```
@@ -158,7 +158,7 @@ Mac 的快捷键
 [
     {
         "keys": ["command+shift+a"], 
-        "command": "split_reverse" 
+        "command": "split_address" 
     }
 ]
 ```
